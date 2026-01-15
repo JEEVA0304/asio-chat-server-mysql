@@ -1,0 +1,18 @@
+# ===== Build Artifacts =====
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# ===== Compiled Binaries =====
+*.exe
+*.dll
+*.o
+
+# ===== IDE / Editor Files =====
+.vscode/
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
