@@ -23,7 +23,8 @@ private:
 public:
     ChatDatabase() {
         conn = mysql_init(NULL);
-        if (!mysql_real_connect(conn, "localhost", "root", "1803", "chatdb", 3306, NULL, 0)) {
+        if (!mysql_real_connect(conn, "localhost", "USERNAME", "PASSWORD", "chatdb", 3306, NULL, 0)) {
+            //chatdb is database 
             std::cout << "Database connection failed: " << mysql_error(conn) << std::endl;
             exit(1);
         }
